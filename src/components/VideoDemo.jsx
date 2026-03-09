@@ -18,6 +18,7 @@ const VideoDemo = () => {
                             src="https://www.youtube.com/embed/PlCqiSUAJSg?rel=0&modestbranding=1&autoplay=1&mute=1&loop=1&playlist=PlCqiSUAJSg"
                             title="ScoreMaster Pro - Guía de Uso"
                             frameBorder="0"
+                            loading="lazy"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen>
                         </iframe>

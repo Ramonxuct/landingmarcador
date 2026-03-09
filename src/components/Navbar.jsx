@@ -18,6 +18,9 @@ const Navbar = () => {
                     <a href="#features" onClick={() => setIsOpen(false)}>Características</a>
                     <a href="#demo" onClick={() => setIsOpen(false)}>Demo</a>
                     <a href="#how-it-works" onClick={() => setIsOpen(false)}>Cómo Funciona</a>
+                    <div className="lang-switcher" style={{ color: "var(--text-muted)", fontSize: "0.9rem", fontWeight: "600", cursor: "pointer" }}>
+                        <span style={{ color: "var(--text-primary)" }}>ES</span> <span style={{ opacity: 0.5 }}>| EN</span>
+                    </div>
                     <a href="#registro" onClick={() => setIsOpen(false)}><button className="nav-cta">Acceso Clientes</button></a>
                 </div>
 
