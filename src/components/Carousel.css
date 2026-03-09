@@ -1,0 +1,278 @@
+.carousel-section {
+    padding: 6rem 0;
+}
+
+.carousel-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.carousel-controls-top {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1rem;
+}
+
+.tab-btn {
+    background: transparent;
+    color: var(--text-secondary);
+    border: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.tab-btn:hover {
+    background: transparent;
+    color: var(--text-primary);
+    transform: none;
+    box-shadow: none;
+}
+
+.tab-btn.active {
+    color: var(--accent-neon);
+    border-bottom: 2px solid var(--accent-neon);
+    border-radius: 0;
+}
+
+.carousel-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: var(--accent-neon);
+    color: #000;
+    transform: scale(1.1);
+}
+
+.slide-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.slide-info h3 {
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+/* Mockups CSS integrados en el carrusel */
+.tablet-frame {
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    background: #222;
+    border-radius: 24px;
+    border: 12px solid #111;
+    padding: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.app-ui {
+    background: #1e293b;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-bar {
+    background: #0f172a;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 12px 12px 0 0;
+}
+
+.main-controls {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.score-control,
+.time-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.score-control span,
+.time-control {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--text-muted);
+}
+
+.btn-add {
+    background: rgba(204, 255, 0, 0.2);
+    color: var(--accent-neon);
+    border: 2px solid var(--accent-neon);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.btn-pause {
+    background: #ef4444;
+    color: white;
+}
+
+.bottom-controls {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background: #0f172a;
+    border-radius: 0 0 12px 12px;
+}
+
+.btn-ads,
+.btn-msg {
+    font-size: 0.8rem;
+    padding: 0.8rem;
+    background: #334155;
+    color: white;
+    width: 45%;
+}
+
+.tv-frame {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    background: #050505;
+    border-radius: 8px;
+    border: 4px solid #333;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 50px rgba(204, 255, 0, 0.15);
+}
+
+.tv-screen {
+    background: url('https://images.unsplash.com/photo-1574629810360-7efbb1925536?auto=format&fit=crop&q=80&w=1000') center/cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.broadcast-overlay {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-neon);
+}
+
+.team-local,
+.team-visit {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.logo-placeholder {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+.score {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: white;
+}
+
+.time-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 30px;
+    background: #111;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.period {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.clock {
+    font-size: 2rem;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.ad-banner-placeholder {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+    .carousel-content {
+        flex-direction: column;
+    }
+}
