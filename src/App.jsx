@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import VideoDemo from './components/VideoDemo'
 import Problem from './components/Problem'
 import Features from './components/Features'
 import HowItWorks from './components/HowItWorks'
@@ -16,6 +17,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <VideoDemo />
         <Problem />
         <Features />
         <CTA />

@@ -1,0 +1,59 @@
+.video-section {
+    padding: 6rem 0;
+    position: relative;
+}
+
+.video-header {
+    margin-bottom: 3rem;
+}
+
+.video-subtitle {
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.video-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 20px;
+    background: rgba(17, 34, 64, 0.4);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(204, 255, 0, 0.15);
+    position: relative;
+}
+
+/* Efecto de resplandor detrás del reproductor */
+.video-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(204, 255, 0, 0.1) 0%, transparent 60%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* Ratio 16:9 */
+    border-radius: 12px;
+    overflow: hidden;
+    background: #000;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
