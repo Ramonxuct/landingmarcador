@@ -1,0 +1,54 @@
+.cta-section {
+    padding: 4rem 0;
+    position: relative;
+}
+
+.cta-box {
+    padding: 4rem 2rem;
+    border-radius: 24px;
+    background: linear-gradient(135deg, rgba(17, 34, 64, 0.9) 0%, rgba(10, 26, 47, 0.9) 100%);
+    border: 1px solid rgba(204, 255, 0, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-box::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(204, 255, 0, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.cta-box .section-title {
+    margin-bottom: 1.5rem;
+}
+
+.cta-subtitle {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+    color: var(--text-primary);
+}
+
+.cta-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cta-actions .primary-cta {
+    font-size: 1.25rem;
+    padding: 1.2rem 3rem;
+    box-shadow: 0 0 20px rgba(204, 255, 0, 0.3);
+}
+
+.cta-note {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}

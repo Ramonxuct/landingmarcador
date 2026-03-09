@@ -22,15 +22,15 @@ const Hero = () => {
                 <div className="hero-visual">
                     <div className="mockup-container glass-panel">
                         <div className="mockup-led">
-                            <span>02 : 14</span>
+                            <span className="animate-pulse">78 : 14</span>
                             <div className="led-teams">
-                                <span className="team">LOCAL <strong>2</strong></span>
-                                <span className="team">VISIT <strong>1</strong></span>
+                                <span className="team">LAKERS <strong>102</strong></span>
+                                <span className="team">BULLS <strong>98</strong></span>
                             </div>
                         </div>
                         <div className="mockup-tablet">
                             <div className="tablet-screen">
-                                <div className="btn-mock"></div>
+                                <div className="btn-mock active"></div>
                                 <div className="btn-mock"></div>
                                 <div className="btn-mock"></div>
                                 <div className="btn-mock"></div>

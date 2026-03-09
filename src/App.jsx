@@ -5,6 +5,8 @@ import Problem from './components/Problem'
 import Features from './components/Features'
 import HowItWorks from './components/HowItWorks'
 import Carousel from './components/Carousel'
+import Testimonials from './components/Testimonials'
+import CTA from './components/CTA'
 import Footer from './components/Footer'
 import './App.css'
 
@@ -16,8 +18,10 @@ function App() {
         <Hero />
         <Problem />
         <Features />
+        <CTA />
         <HowItWorks />
         <Carousel />
+        <Testimonials />
       </main>
       <Footer />
     </div>

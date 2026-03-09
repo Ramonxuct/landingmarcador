@@ -7,11 +7,11 @@
   --text-primary: #FFFFFF;
   --text-secondary: #8892B0;
   --text-muted: #64748B;
-  
+
   /* Typography */
   --font-heading: 'Montserrat', sans-serif;
   --font-body: 'Roboto', sans-serif;
-  
+
   font-family: var(--font-body);
   line-height: 1.5;
   font-weight: 400;
@@ -26,6 +26,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -38,7 +42,12 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   color: var(--text-primary);
   margin-top: 0;

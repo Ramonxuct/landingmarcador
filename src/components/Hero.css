@@ -42,10 +42,11 @@
 }
 
 .hero-subtitle {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     margin-bottom: 2.5rem;
     font-weight: 400;
     line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .hero-cta-group {
@@ -165,6 +166,28 @@
     border: 1px solid rgba(204, 255, 0, 0.3);
     border-radius: 6px;
     height: 40px;
+    transition: all 0.2s;
+}
+
+.btn-mock.active {
+    background: var(--accent-neon);
+    box-shadow: 0 0 10px rgba(204, 255, 0, 0.5);
+}
+
+.animate-pulse {
+    animation: timerPulse 1s infinite alternate;
+}
+
+@keyframes timerPulse {
+    from {
+        opacity: 1;
+        text-shadow: 0 0 10px rgba(204, 255, 0, 0.8);
+    }
+
+    to {
+        opacity: 0.8;
+        text-shadow: 0 0 20px rgba(204, 255, 0, 1);
+    }
 }
 
 @media (max-width: 992px) {
