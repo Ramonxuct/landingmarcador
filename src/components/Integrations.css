@@ -1,0 +1,71 @@
+.integrations-section {
+    padding: 3rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+}
+
+.integrations-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.logos-slider-container {
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: -webkit-linear-gradient(left, transparent, black 10%, black 90%, transparent);
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+
+.logos-slider {
+    display: inline-flex;
+    gap: 4rem;
+    animation: slide 35s linear infinite;
+    align-items: center;
+}
+
+.logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.logo-item:hover {
+    opacity: 1;
+}
+
+.logo-text-placeholder {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #fff;
+    white-space: nowrap;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .logos-slider {
+        gap: 2rem;
+    }
+
+    .logo-text-placeholder {
+        font-size: 1.2rem;
+    }
+}
