@@ -13,22 +13,32 @@ const Carousel = () => {
             content: (
                 <div className="slide-mockup control-mockup">
                     <div className="tablet-frame">
-                        <div className="app-ui">
-                            <div className="header-bar">Dashboard del Operador</div>
-                            <div className="main-controls">
-                                <div className="score-control">
-                                    <span>LOCAL</span> <div className="btn-add">+1</div>
+                        <div className="app-ui real-ui">
+                            <div className="header-bar">SCOREMASTER PRO <span className="admin-pill">Admin</span></div>
+                            <div className="main-content">
+                                <div className="team-panel local">
+                                    <div className="team-name">LOCAL</div>
+                                    <button className="btn-score">GOL +</button>
+                                    <div className="card-buttons">
+                                        <div className="card yellow"></div>
+                                        <div className="card red"></div>
+                                    </div>
                                 </div>
-                                <div className="time-control">
-                                    12:45 <button className="btn-pause">Pause</button>
+                                <div className="center-panel">
+                                    <div className="tv-preview">
+                                        <span>LIVE</span>
+                                        <div className="dummy-scores">0 - 0</div>
+                                    </div>
+                                    <button className="btn-resume">▶ REANUDAR</button>
                                 </div>
-                                <div className="score-control">
-                                    <span>VISITANTE</span> <div className="btn-add">+1</div>
+                                <div className="team-panel visit">
+                                    <div className="team-name">VISITANTE</div>
+                                    <button className="btn-score">GOL +</button>
+                                    <div className="card-buttons">
+                                        <div className="card yellow"></div>
+                                        <div className="card red"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="bottom-controls">
-                                <button className="btn-ads">Lanzar Publicidad</button>
-                                <button className="btn-msg">Mensaje Rápido</button>
                             </div>
                         </div>
                     </div>

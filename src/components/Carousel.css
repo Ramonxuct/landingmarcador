@@ -105,8 +105,8 @@
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 }
 
-.app-ui {
-    background: #1e293b;
+.app-ui.real-ui {
+    background: var(--bg-primary);
     width: 100%;
     height: 100%;
     border-radius: 12px;
@@ -115,71 +115,108 @@
 }
 
 .header-bar {
-    background: #0f172a;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
+    background: #0B1121;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 800;
+    font-size: 0.9rem;
+    color: #fff;
     border-radius: 12px 12px 0 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.main-controls {
+.admin-pill {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: normal;
+}
+
+.main-content {
     flex: 1;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-}
-
-.score-control,
-.time-control {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
-
-.score-control span,
-.time-control {
-    font-size: 1.2rem;
-    font-weight: 800;
-    color: var(--text-muted);
-}
-
-.btn-add {
-    background: rgba(204, 255, 0, 0.2);
-    color: var(--accent-neon);
-    border: 2px solid var(--accent-neon);
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    font-weight: 900;
-    cursor: pointer;
-}
-
-.btn-pause {
-    background: #ef4444;
-    color: white;
-}
-
-.bottom-controls {
-    display: flex;
-    justify-content: space-around;
-    padding: 15px;
-    background: #0f172a;
+    gap: 10px;
+    padding: 10px;
+    background: #1E293B;
     border-radius: 0 0 12px 12px;
 }
 
-.btn-ads,
-.btn-msg {
-    font-size: 0.8rem;
-    padding: 0.8rem;
-    background: #334155;
+.main-content .team-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.main-content .btn-score {
+    height: 80px;
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: auto;
+}
+
+.card {
+    width: 30px;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card.yellow {
+    background: var(--ui-yellow);
+}
+
+.card.red {
+    background: var(--ui-red);
+}
+
+.main-content .center-panel {
+    flex: 1.5;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.tv-preview {
+    background: #000;
+    width: 100%;
+    height: calc(100% - 60px);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tv-preview span {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    background: red;
     color: white;
-    width: 45%;
+    font-size: 0.5rem;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.dummy-scores {
+    font-family: monospace;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
 }
 
 .tv-frame {

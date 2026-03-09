@@ -29,11 +29,19 @@ const Hero = () => {
                             </div>
                         </div>
                         <div className="mockup-tablet">
-                            <div className="tablet-screen">
-                                <div className="btn-mock active"></div>
-                                <div className="btn-mock"></div>
-                                <div className="btn-mock"></div>
-                                <div className="btn-mock"></div>
+                            <div className="tablet-screen real-ui">
+                                <div className="team-panel local">
+                                    <div className="team-name">LOCAL</div>
+                                    <button className="btn-score">GOL +</button>
+                                </div>
+                                <div className="center-panel">
+                                    <div className="status-indicator"></div>
+                                    <button className="btn-resume">▶ REANUDAR</button>
+                                </div>
+                                <div className="team-panel visit">
+                                    <div className="team-name">VISITANTE</div>
+                                    <button className="btn-score">GOL +</button>
+                                </div>
                             </div>
                         </div>
                     </div>

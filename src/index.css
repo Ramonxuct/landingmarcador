@@ -1,12 +1,23 @@
 :root {
   /* Brand Colors */
-  --bg-primary: #0A1A2F;
-  --bg-secondary: #112240;
-  --bg-tertiary: #1A2E4E;
+  --bg-primary: #0B1121;
+  /* Fondo muy oscuro, sacado de la captura */
+  --bg-secondary: #1F2937;
+  /* Paneles grises/azulados */
+  --bg-tertiary: #374151;
   --accent-neon: #CCFF00;
-  --text-primary: #FFFFFF;
-  --text-secondary: #8892B0;
-  --text-muted: #64748B;
+  /* Mantenemos este para CTA promocionales */
+  --ui-blue: #2563EB;
+  /* Botón Local */
+  --ui-red: #DC2626;
+  /* Botón Visitante */
+  --ui-green: #10B981;
+  /* Botón Reanudar */
+  --ui-yellow: #FACC15;
+  /* Tarjeta Amarilla */
+  --text-primary: #F9FAFB;
+  --text-secondary: #9CA3AF;
+  --text-muted: #6B7280;
 
   /* Typography */
   --font-heading: 'Montserrat', sans-serif;
