@@ -15,9 +15,10 @@ const Navbar = () => {
                 </div>
 
                 <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
-                    <a href="#features">Características</a>
-                    <a href="#how-it-works">Cómo Funciona</a>
-                    <button className="nav-cta">Acceso Clientes</button>
+                    <a href="#features" onClick={() => setIsOpen(false)}>Características</a>
+                    <a href="#demo" onClick={() => setIsOpen(false)}>Demo</a>
+                    <a href="#how-it-works" onClick={() => setIsOpen(false)}>Cómo Funciona</a>
+                    <a href="#registro" onClick={() => setIsOpen(false)}><button className="nav-cta">Acceso Clientes</button></a>
                 </div>
 
                 <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>

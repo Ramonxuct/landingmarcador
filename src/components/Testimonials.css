@@ -29,6 +29,19 @@
     font-style: italic;
     margin-bottom: 2rem;
     flex-grow: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.review-text::before {
+    content: '"';
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    font-size: 4rem;
+    color: rgba(204, 255, 0, 0.1);
+    z-index: -1;
+    font-family: serif;
 }
 
 .reviewer {
