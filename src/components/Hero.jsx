@@ -8,24 +8,30 @@ const Hero = () => {
             <div className="container hero-container">
                 <div className="hero-content">
                     <h1 className="hero-title">
-                        Domina el Marcador.<br />
-                        <span className="text-gradient">Controla la Emoción.</span>
+                        Dominio Absoluto del Espectáculo Deportivo.<br />
+                        <span className="text-gradient">Sin Latencia. Sin Dependencias.</span>
                     </h1>
                     <p className="hero-subtitle">
-                        La plataforma profesional de gestión deportiva en tiempo real para estadios, streaming y eventos. Configura, controla y proyecta con un solo clic.
+                        ScoreMaster Pro es la suite definitiva para la gestión de pantallas gigantes y marcadores físicos. Un sistema 100% aislado, inalámbrico y diseñado para maximizar los ingresos de tu estadio.
                     </p>
                     <div className="hero-cta-group">
                         <button
                             className="primary-cta"
-                            onClick={() => window.dataLayer?.push({ 'event': 'hero_cta_register_click' })}
+                            onClick={() => {
+                                window.location.href = '#contacto';
+                                window.dataLayer?.push({ 'event': 'hero_cta_demo_click' });
+                            }}
                         >
-                            Empieza ahora - Registro Gratis
+                            Solicitar Demo Técnica
                         </button>
                         <button
                             className="secondary-cta"
-                            onClick={() => window.dataLayer?.push({ 'event': 'hero_cta_demo_click' })}
+                            onClick={() => {
+                                window.location.href = '#caracteristicas';
+                                window.dataLayer?.push({ 'event': 'hero_cta_specs_click' });
+                            }}
                         >
-                            Ver Demo
+                            Ver Especificaciones
                         </button>
                     </div>
                 </div>

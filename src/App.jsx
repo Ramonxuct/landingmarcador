@@ -3,7 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import VideoDemo from './components/VideoDemo'
 import Problem from './components/Problem'
-import Features from './components/Features'
+import BentoFeatures from './components/BentoFeatures'
 import Integrations from './components/Integrations'
 import HowItWorks from './components/HowItWorks'
 import Carousel from './components/Carousel'
@@ -22,13 +22,13 @@ function App() {
         <Hero />
         <VideoDemo />
         <Problem />
-        <Features />
+        <BentoFeatures />
         <Integrations />
-        <CTA />
         <HowItWorks />
         <Carousel />
         <Testimonials />
         <FAQ />
+        <CTA />
       </main>
       <Footer />
       <MobileStickyCTA />

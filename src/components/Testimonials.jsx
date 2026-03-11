@@ -5,21 +5,21 @@ import './Testimonials.css';
 const Testimonials = () => {
     const reviews = [
         {
-            text: "Desde que implementamos ScoreMaster Pro, hemos monetizado los descansos con banners locales. El sistema se paga solo.",
-            author: "Carlos Gómez",
-            role: "Director Pabellón Municipal",
+            text: "ScoreMaster Pro eliminó el estrés de la mesa de control. El hecho de ser offline e inalámbrico nos permite operar desde cualquier rincón del pabellón con 0 visibilidad de latencia.",
+            author: "Director Técnico de Estadio",
+            role: "Pabellón Deportivo (10,000 espectadores)",
             rating: 5
         },
         {
-            text: "La salida 'External' es perfecta para nuestra emisión en Twitch. Los gráficos se ven súper limpios y profesionales.",
-            author: "Liga Amateur 3x3",
-            role: "Organización de Eventos",
+            text: "La inyección de publicidad en un click mediante listas de reproducción paga el software por sí solo. Hemos aumentado los impactos de nuestros patrocinadores un 45%.",
+            author: "Jefe de Patrocinios",
+            role: "Club Baloncesto Profesional",
             rating: 5
         },
         {
-            text: "Cualquier voluntario puede manejar el marcador desde una tablet sin miedo a equivocarse. Intuitivo y a prueba de errores.",
-            author: "María L.",
-            role: "Coordinadora Deportiva",
+            text: "El sistema de roles es clave. Ahora el cronometrador solo ve el reloj, y producción dispara las animaciones 'GOL', evitando errores críticos durante las finales.",
+            author: "Productor Ejecutivo",
+            role: "Liga Nacional de Fútbol Sala",
             rating: 5
         }
     ];

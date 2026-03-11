@@ -15,13 +15,13 @@ const Navbar = () => {
                 </div>
 
                 <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
-                    <a href="#features" onClick={() => setIsOpen(false)}>Características</a>
-                    <a href="#demo" onClick={() => setIsOpen(false)}>Demo</a>
-                    <a href="#how-it-works" onClick={() => setIsOpen(false)}>Cómo Funciona</a>
+                    <a href="#solucion" onClick={() => setIsOpen(false)}>Solución</a>
+                    <a href="#caracteristicas" onClick={() => setIsOpen(false)}>Arquitectura</a>
+                    <a href="#como-funciona" onClick={() => setIsOpen(false)}>Flujo de Trabajo</a>
                     <div className="lang-switcher" style={{ color: "var(--text-muted)", fontSize: "0.9rem", fontWeight: "600", cursor: "pointer" }}>
                         <span style={{ color: "var(--text-primary)" }}>ES</span> <span style={{ opacity: 0.5 }}>| EN</span>
                     </div>
-                    <a href="#registro" onClick={() => setIsOpen(false)}><button className="nav-cta">Acceso Clientes</button></a>
+                    <a href="#contacto" onClick={() => setIsOpen(false)}><button className="nav-cta">Agendar Demo</button></a>
                 </div>
 
                 <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>

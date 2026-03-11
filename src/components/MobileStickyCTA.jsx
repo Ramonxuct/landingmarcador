@@ -22,9 +22,12 @@ const MobileStickyCTA = () => {
         <div className={`mobile-sticky-cta ${isVisible ? 'visible' : ''}`}>
             <button
                 className="sticky-btn"
-                onClick={() => window.dataLayer?.push({ 'event': 'mobile_sticky_cta_click' })}
+                onClick={() => {
+                    window.location.href = '#contacto';
+                    window.dataLayer?.push({ 'event': 'mobile_sticky_cta_click' });
+                }}
             >
-                Empieza Gratis
+                Agendar Demo
             </button>
         </div>
     );

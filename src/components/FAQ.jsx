@@ -7,20 +7,20 @@ const FAQ = () => {
 
     const faqs = [
         {
-            question: "¿Necesito hardware o pantallas LED especiales?",
-            answer: "No. ScoreMaster Pro funciona en cualquier tablet, iPad, PC o Mac. Su salida 'External' se puede conectar a cualquier pantalla gigante, televisor o monitor mediante HDMI, o capturar en OBS/vMix compartiendo pestaña."
+            question: "¿Qué pasa si se cae nuestra conexión a internet en el estadio?",
+            answer: "Absolutamente nada. ScoreMaster Pro está diseñado bajo una arquitectura Zero-Trust y puede operar 100% en una red local aislada (LAN / Intranet). No dependes de internet para que el show continúe."
         },
         {
-            question: "¿Requiere conexión a internet para funcionar?",
-            answer: "Sí, ScoreMaster Pro es una aplicación web basada en la nube. Esto significa que puedes controlar el marcador desde la pista con una tablet y proyectarlo en la cabina de retransmisión sin tirar cables larguísimos, todo sincronizado al milisegundo."
+            question: "¿Es compatible con nuestros paneles LED y matrices actuales?",
+            answer: "Sí. El sistema es 'Hardware Agnostic'. La salida de renderizado de video se emite en estándares universales que tu mezclador o procesadora LED actual puede ingerir sin problemas (vía HDMI directo o captura NDI/SDI según tu topología)."
         },
         {
-            question: "¿Puedo personalizar los colores y logos de los equipos?",
-            answer: "Absolutamente. Puedes subir los escudos de los equipos locales y visitantes, y los fondos del panel de táctil se adaptarán automáticamente (rojo, azul, etc.) para evitar faltas de concentración bajo presión."
+            question: "¿Podemos tener un operador para básquetbol y otro dedicado solo al cronómetro de posesión?",
+            answer: "Por supuesto. El sistema soporta múltiples terminales (tablets/PCs) conectados simultáneamente. Puedes asignar el rol de 'Cronometrador de 24s' a un dispositivo, bloqueando el resto de funciones para evitar errores graves durante el juego."
         },
         {
-            question: "¿Cómo funciona la monetización por ADS?",
-            answer: "Puedes subir múltiples banners publicitarios a tu galería. Durante los tiempos muertos o medias partes, simplemente haz clic en 'Lanzar Publicidad' y el marcador será reemplazado por los rotadores automáticos de tus patrocinadores."
+            question: "¿Cómo funciona la inyección automática de publicidad?",
+            answer: "Puedes pre-cargar listas de reproducción (Ad Playlists) de sponsors en video o imagen dinámica. Durante un tiempo muerto, el operador de producción puede lanzar la pauta con un solo botón, midiendo el tiempo exacto de exposición para tus reportes de ROI."
         }
     ];
 

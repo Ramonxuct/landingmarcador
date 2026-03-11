@@ -1,0 +1,282 @@
+.bento-features {
+    padding: 6rem 0;
+    position: relative;
+    background-color: var(--bg-primary);
+}
+
+.section-header {
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bento-item {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.4s ease;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Hover effect Neón */
+.bento-item:hover {
+    transform: translateY(-5px);
+    border-color: rgba(57, 255, 20, 0.4);
+    box-shadow: 0 10px 30px rgba(57, 255, 20, 0.05);
+}
+
+.bento-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top right, rgba(57, 255, 20, 0.05), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.bento-item:hover::before {
+    opacity: 1;
+}
+
+.feature-content {
+    position: relative;
+    z-index: 1;
+}
+
+.icon-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: rgba(57, 255, 20, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(57, 255, 20, 0.2);
+}
+
+.neon-icon {
+    color: var(--accent-neon);
+}
+
+.bento-item h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.bento-item p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* Grid Spans */
+.bento-large {
+    grid-column: span 2;
+    grid-row: span 2;
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(10, 10, 10, 0.9) 100%);
+}
+
+.bento-large h3 {
+    font-size: 1.75rem;
+}
+
+.bento-wide {
+    grid-column: span 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+}
+
+.bento-wide .feature-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.bento-wide .icon-wrapper {
+    margin-bottom: 0;
+    flex-shrink: 0;
+}
+
+.bento-wide .text-content {
+    flex: 1;
+}
+
+/* Visuals */
+.feature-visual {
+    margin-top: 2rem;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.network-diagram {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.network-diagram .node {
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: #fff;
+    background: var(--bg-tertiary);
+    border: 1px solid #444;
+}
+
+.network-diagram .tablet {
+    border-color: var(--ui-blue);
+}
+
+.network-diagram .server {
+    border-color: var(--accent-neon);
+    background: rgba(57, 255, 20, 0.1);
+}
+
+.network-diagram .screen {
+    border-color: var(--ui-red);
+}
+
+.network-diagram .connection {
+    width: 30px;
+    height: 2px;
+    background: #444;
+    position: relative;
+}
+
+.connection.active::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 10px;
+    height: 6px;
+    background: var(--accent-neon);
+    border-radius: 3px;
+    animation: flowData 1.5s infinite linear;
+    box-shadow: 0 0 10px var(--accent-neon);
+}
+
+@keyframes flowData {
+    0% {
+        left: 0;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bento-wide {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bento-large,
+    .bento-wide {
+        grid-column: span 1;
+        grid-row: auto;
+    }
+
+    .bento-wide .feature-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .network-diagram {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .network-diagram .connection {
+        width: 2px;
+        height: 20px;
+    }
+
+    .connection.active::after {
+        top: 0;
+        left: -2px;
+        width: 6px;
+        height: 10px;
+        animation: flowDataVertical 1.5s infinite linear;
+    }
+
+    @keyframes flowDataVertical {
+        0% {
+            top: 0;
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            top: 100%;
+            opacity: 0;
+        }
+    }
+}
