@@ -30,6 +30,20 @@ const CTA = () => {
                     <div style={{ marginTop: "1.5rem", fontSize: "0.85rem", color: "var(--text-muted)" }}>
                         <span className="cta-note">Respuesta garantizada del equipo de ingeniería en menos de 24h.</span>
                     </div>
+
+                    <div className="cta-secondary-path" style={{ marginTop: "3rem", paddingTop: "2rem", borderTop: "1px solid rgba(255,255,255,0.05)" }}>
+                        <p style={{ color: "var(--text-muted)", marginBottom: "1rem" }}>¿Producir un partido local este fin de semana?</p>
+                        <a
+                            href="https://app.scoremaster.pro/register"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="secondary-cta ghost-cta"
+                            style={{ display: "inline-block", padding: "0.8rem 1.5rem", fontSize: "0.9rem", textDecoration: "none" }}
+                            onClick={() => window.dataLayer?.push({ 'event': 'bottom_cta_amateur_register' })}
+                        >
+                            Crea una cuenta gratuita instantánea
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

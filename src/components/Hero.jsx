@@ -22,17 +22,26 @@ const Hero = () => {
                                 window.dataLayer?.push({ 'event': 'hero_cta_demo_click' });
                             }}
                         >
-                            Solicitar Demo Técnica
+                            Agendar Demo Técnica
                         </button>
                         <button
-                            className="secondary-cta"
+                            className="secondary-cta ghost-cta"
                             onClick={() => {
-                                window.location.href = '#caracteristicas';
-                                window.dataLayer?.push({ 'event': 'hero_cta_specs_click' });
+                                window.open('https://app.scoremaster.pro/register', '_blank');
+                                window.dataLayer?.push({ 'event': 'hero_cta_amateur_register' });
                             }}
                         >
-                            Ver Especificaciones
+                            Crear Cuenta Gratis
                         </button>
+                    </div>
+
+                    <div className="hero-trust-badges">
+                        <p className="trust-title">Diseñado para la máxima exigencia</p>
+                        <div className="trust-logos">
+                            <span className="badge-pill">✓ 100% Uptime Garantizado</span>
+                            <span className="badge-pill">✓ Arquitectura Zero-Trust</span>
+                            <span className="badge-pill">✓ Operación LAN Offline</span>
+                        </div>
                     </div>
                 </div>
 
