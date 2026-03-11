@@ -9,12 +9,11 @@
     border-left: none;
     border-right: none;
     padding: 1rem 0;
-    background-color: rgba(11, 17, 33, 0.85);
-    /* Fondo Dark Slate con transparencia */
+    background-color: rgba(15, 23, 42, 0.85);
+    /* Navy/Slate con transparencia */
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    /* Separador muy sutil */
 }
 
 .navbar-container {
@@ -43,7 +42,7 @@
 }
 
 .highlight {
-    color: var(--accent-neon);
+    color: var(--accent-score);
 }
 
 .navbar-links {

@@ -1,33 +1,36 @@
 :root {
-  /* Brand Colors */
-  --bg-primary: #0A0A0A;
-  /* Negro puro Enterprise */
-  --bg-secondary: #121212;
-  /* Elevación 1 */
-  --bg-tertiary: #1A1A1A;
-  /* Elevación 2 */
+  /* Brand Colors - Basados en Guía del Operador */
+  --bg-primary: #0F172A;
+  /* Deep Navy (Slate 900) */
+  --bg-secondary: #1E293B;
+  /* Slate 800 */
+  --bg-tertiary: #334155;
+  /* Slate 700 */
 
+  --accent-score: #2563EB;
+  /* Azul ScoreMaster App */
+  --accent-green: #10B981;
+  /* Verde Success App */
   --accent-neon: #39FF14;
-  /* Verde neón técnico */
-  --accent-neon-dim: rgba(57, 255, 20, 0.15);
-  /* Verde neón transparente para fondos/bordes */
+  /* Mantener neón para toques tácticos */
 
   --ui-blue: #3B82F6;
   --ui-red: #EF4444;
   --ui-green: #10B981;
   --ui-yellow: #F59E0B;
 
-  --text-primary: #FFFFFF;
-  --text-secondary: #A1A1AA;
-  /* Zinc 400 */
-  --text-muted: #71717A;
-  /* Zinc 500 */
-  --border-color: #27272A;
-  /* Zinc 800 */
+  --text-primary: #F8FAFC;
+  /* Slate 50 */
+  --text-secondary: #94A3B8;
+  /* Slate 400 */
+  --text-muted: #64748B;
+  /* Slate 500 */
+  --border-color: #1E293B;
+  /* Slate 800 */
 
-  /* Typography */
-  --font-heading: 'Montserrat', sans-serif;
-  --font-body: 'Roboto', sans-serif;
+  /* Typography - Más Software UI */
+  --font-heading: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
 
   font-family: var(--font-body);
   line-height: 1.5;

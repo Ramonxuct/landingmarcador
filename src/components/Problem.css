@@ -24,7 +24,7 @@
 
 .problem-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(204, 255, 0, 0.3);
+    border-color: rgba(37, 99, 235, 0.3);
 }
 
 .problem-icon {
@@ -40,8 +40,8 @@
 }
 
 .problem-icon.highlight-icon {
-    background: rgba(204, 255, 0, 0.1);
-    color: var(--accent-neon);
+    background: rgba(37, 99, 235, 0.1);
+    color: var(--accent-score);
 }
 
 .problem-card h3 {
@@ -67,7 +67,7 @@
 }
 
 .solution-indicator {
-    color: var(--accent-neon);
+    color: var(--accent-score);
     animation: pulse 2s infinite;
 }
 
@@ -80,7 +80,7 @@
     50% {
         transform: scale(1.1);
         opacity: 1;
-        filter: drop-shadow(0 0 10px rgba(204, 255, 0, 0.5));
+        filter: drop-shadow(0 0 10px rgba(37, 99, 235, 0.5));
     }
 
     100% {
